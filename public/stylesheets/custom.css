@@ -1,0 +1,236 @@
+.alignCenter {
+	text-align: center;
+}
+
+.sizeImage{
+	height: 30%;
+	width: 33%;
+}
+
+
+
+.arPrice{
+	font-size: 12px;
+}
+.oldprice{
+	text-decoration: line-through;
+	color: #000;
+	font-size: 16px;
+	padding: 0;
+	padding: 0;
+}
+div.pricing-table h3 span {
+margin: 6px auto -65px;
+}
+ul.planes li{
+	padding: 6px 0;
+	padding-left: 6px;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 200;
+	color: #3272c9;
+
+}
+.pPrice{
+	font-size: 32px;
+	display: block;
+	font-weight: 300;
+	color: #000000;
+}
+.spc{
+	margin: 0 0 12px 0;
+	padding: 0;
+}
+.areaform{
+	background-color: #f5f5f5;
+	padding: 0px;
+	border-top:1px solid #ddd;
+}
+.cContct{
+	padding: 18px 26px;
+	font-size: 24px;
+}
+.dinfo{
+	line-height: 18px;
+	font-size: 12px;
+	padding: 14px 0 2px;
+}
+#slider ul{
+	margin: 0;
+	padding: 0;
+}
+#slider ul li{
+	list-style: none;
+	height: 450px;
+	text-align: center;
+	overflow: hidden;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-attachment: fixed;
+	background-size: cover;
+	background: black;
+}
+
+#slider .ttl-1{
+	font-size: 24px;
+	color: #FFF;
+	line-height: 32px;
+	letter-spacing: 5px;
+	top: 60px;
+	position: relative;
+}
+#slider .ttl-2{
+	font-weight: 700;
+	font-size: 86px;
+	color: #FFF;
+	letter-spacing: 3px;
+	text-shadow: 0px 1px 0px rgba(0,0,0,0.50);
+	top: 80px;
+	position: relative;
+}
+#slider .ttl-3{
+	font-size: 16px;
+	color: #FFF;
+	letter-spacing: 4px;
+	top: 106px;
+	position: relative;
+}
+#slider button{
+	border: 2px solid #FFF;
+	background-color: transparent;
+	padding: 26px 18px;
+	font-size: 30px;
+	font-weight: 700;
+	color: #FFF;
+	text-shadow: 0px 1px 2px rgba(0,0,0,0.50);
+	margin: 0;
+	top: 130px;
+	position: relative;
+}
+
+.iServices{
+	text-align: center !important;
+	margin-top: -110px;
+	position: relative;
+	z-index: 99;
+}
+.bColor1{border-color: #0A78CB;}
+.bColor2{border-color: #22D1DD;}
+.bColor3{border-color: #65BB61;}
+.bColor4{border-color: #F8C129;}
+
+.iServices .imgBorder{
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 100%;
+	width: 186px;
+	height: 186px;
+	margin: auto;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.iServices img{
+	margin: 0;
+	padding: 0;
+	box-shadow: 0px 0px 1px #bbb;
+	border-radius: 100%;
+}
+.iServices h2{
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 20px;
+	margin-bottom: 15px;
+}
+.iServices .spline{
+	border-style: solid;
+	border-width: 2px;
+	width: 56px;
+	margin: auto;
+	margin-top: -5px;
+	margin-bottom: 8px;
+	display: block;
+}
+.iServices p{
+	margin: 0;
+	padding: 0 4%;
+	line-height: 18px;
+	margin-bottom: 20px;
+}
+.buttonMore a{
+	background: url(../img/morebutton.png) right center no-repeat;
+	display: inline-block;
+	padding-right: 66px;
+}
+.buttonMore .btt1{
+	display: block;
+	font-weight: 700;
+	font-size: 58px;
+	color: #009BD6;
+	line-height: 40px;
+}
+.buttonMore .btt2{
+	font-size: 22px;
+	color: #000;
+	line-height: 28px;
+}
+.container .inpDom{
+	padding: 8px;
+	border: 1px solid #DDD;
+	border-radius: 0;
+	width: 250px;
+}
+.container .inpDomSelct{
+	width: 80px;
+	padding: 5px 6px 5px !important;
+	font-size: 18px;
+	border: 1px solid #DDD;
+	height: 38px;
+	border-radius: 0;
+}
+.container .subtitle{
+	margin-top: -14px;
+	font-size: 18px;
+	color: #000;
+}
+#div_backg {
+	height: 450px;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+}
+
+@media (max-width: 850px) {
+.iServices{
+	margin-top: -85px;
+}
+.iServices .imgBorder{
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 100%;
+	width: 130px;
+	height: 130px;
+	margin: auto;
+	padding: 10px;
+}
+
+#slider .ttl-2{
+	margin-left: 18px;
+}
+#slider button{
+	margin-left: -34px;
+}
+
+}
+@media (max-width:767px) {
+.iServices{
+	margin-top: 15px;
+}
+#slider{
+	display: none;
+}
+
+}

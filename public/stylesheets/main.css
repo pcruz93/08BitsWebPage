@@ -1,0 +1,84 @@
+.form-group {
+    border-color: #2c3e50;
+}
+
+.navbar-default {
+    background-color: #4d4d4d !important;
+}
+
+.navbar-fixed-top {
+    position: fixed;
+}
+
+label.label-cotizacion{
+
+    text-align: left ;
+    color: #61BC47;
+}
+
+/*bar top*/
+
+
+/*
+@media (max-width: 979px) {
+    .navbar-fixed-top {
+        position: fixed;
+
+    }
+}
+@media (max-width: 767px) {
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
+        margin-right: 15px;
+        margin-left: 0px;
+    }
+}
+@media (min-width: 1200px){
+  .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+      width: 1200px;
+  }
+
+}
+*/
+
+
+/* servicios div
+
+@media (min-width: 1200px) {
+    .row {
+        margin-left: 50px;
+    }
+}
+@media (max-width: 979px) and (min-width: 768px) {
+    .row {
+        margin-left: 3%;
+    }
+}
+*/
+
+
+/*btn cotizacion */
+
+.btn-warning {
+    background-color: #4d4d4d !important;
+    border-color: #4d4d4d!important;
+}
+
+.buttonburguer {
+    margin-right: 40px !important;
+}
+
+.topImg {
+    margin-top: -25px;
+}
+
+.topContainer {
+    margin-top: -60px;
+}

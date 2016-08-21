@@ -1,8 +1,36 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/*
+  Template Name: 08Bits
+  Author : Mario
+  Author URI: http://www.08bits.com
+  Version: 1.0
+  Tags: light, white, restaurant, multi page, landing page, custom-colors, Bootstrap, responsive, html5, css3, Sass, template, web template
+
+*/
+
+
+
+
+
+/*Preloader*/
+#aa-preloader-area {
+  background-color: #fff;
+  position: fixed;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
 }
 
-a {
-  color: #00B7FF;
+.mu-preloader {
+  position: relative;
+  top: 30%;
+}
+
+.loadingText{
+  color: #2C3E50;
+  font-size: 20px;
 }
