@@ -248,7 +248,7 @@ jQuery(function($){
   /* ----------------------------------------------------------- */
 
    jQuery(window).load(function() { // makes sure the whole site is loaded
-      jQuery('#aa-preloader-area').delay(2500).fadeOut('slow'); // will fade out
+      jQuery('#aa-preloader-area').delay(1500).fadeOut('slow'); // will fade out
     })
 
 

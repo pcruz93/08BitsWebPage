@@ -29,6 +29,7 @@
 	}
 
 
+
 }
 
 @media (max-width: 767px) {
@@ -36,6 +37,17 @@
 		height: 100%;
 		width: 100%;
 	}
+
+	.topImg{
+		margin-left: 20px;
+
+	}
+
+	.navbar-header{
+		padding-top: 5px !important;
+	}
+
+
 
 
 	/* Base */
