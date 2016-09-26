@@ -1,3 +1,4 @@
+//Enviar el correo con los datos del contacto
 $(function() {
 
     $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
@@ -11,16 +12,20 @@ $(function() {
             event.preventDefault();
             
             // get values from FORM
-            var name = $("input#name").val();
+            var name = $("#namecontact").val();
+            var email = $("#emailcontact").val();
+            var phone = $("#phonecontact").val();
+            var message = $("#messagecontact").val();
+            /*var name = $("input#name").val();
             var email = $("input#email").val();
             var phone = $("input#phone").val();
-            var message = $("textarea#message").val();
-            var firstName = name; // For Success/Failure Message
+            var message = $("textarea#message").val();*/
+            /*var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
-            }
-            $.ajax({
+            }*/
+            /*$.ajax({
                 url: "././mail/contact_me.php",
                 type: "POST",
                 data: {
@@ -54,7 +59,34 @@ $(function() {
                     //clear all fields
                     $('#contactForm').trigger("reset");
                 },
-            })
+            })*/
+            $.post("././mail",{name: name, email: email, phone: phone, message:message}, function(data){
+                if(data==='done')
+                {
+                    // Enable button & show success message
+                    $("#btnSubmit").attr("disabled", false);
+                    $('#success').html("<div class='alert alert-success'>");
+                    $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                        .append("</button>");
+                    $('#success > .alert-success')
+                        .append("<strong>La información ha sido enviada correctamente. Nos comunicaremos pronto.</strong>");
+                    $('#success > .alert-success')
+                        .append('</div>');
+
+                    //clear all fields
+                    $('#contactForm').trigger("reset");
+                }
+                else {
+                    // Fail message
+                    $('#success').html("<div class='alert alert-danger'>");
+                    $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                        .append("</button>");
+                    $('#success > .alert-danger').append("<strong>Ha ocurrido un error al enviar la información. Inténtalo más tarde.");
+                    $('#success > .alert-danger').append('</div>');
+                    //clear all fields
+                    $('#contactForm').trigger("reset");
+                }
+            });
         },
         filter: function() {
             return $(this).is(":visible");

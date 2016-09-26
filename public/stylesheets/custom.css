@@ -75,7 +75,6 @@ ul.planes li{
 	background-position: left top;
 	background-attachment: fixed;
 	background-size: cover;
-	background: black;
 }
 
 #slider .ttl-1{
@@ -206,7 +205,7 @@ ul.planes li{
 	overflow: hidden;
 	position: absolute;
 	width: 100%;
-	z-index: -1;
+	z-index: 0;
 }
 
 @media (max-width: 850px) {
@@ -239,4 +238,10 @@ ul.planes li{
 	display: none;
 }
 
+body > .inner {
+  display: none;
+}
+
+body.pg-loaded > .inner {
+  display: block;
 }
