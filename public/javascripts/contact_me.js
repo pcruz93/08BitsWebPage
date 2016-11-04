@@ -100,6 +100,6 @@ $(function() {
 });
 
 // When clicking on Full hide fail/success boxes
-$('#name').focus(function() {
+$('#namecontact').focus(function() {
     $('#success').html('');
 });

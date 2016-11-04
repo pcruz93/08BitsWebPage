@@ -16,7 +16,7 @@ function handleSendMail(req, res) {
     var message = req.body.message;
 
     //Prueba de los datos que recibe del formulario
-    //res.json({yo: name + ' ' + email + ' ' + phone + ' ' + message});
+    //res.json({data: name + ' ' + email + ' ' + phone + ' ' + message});
 
     var transporter = nodemailer.createTransport(config.smtps);
 
@@ -24,7 +24,8 @@ function handleSendMail(req, res) {
 
     var mailOptions = {
         from: 'mail.08bits@gmail.com', // sender address
-        to: 'mail.08bits@yopmail.com', // list of receivers
+        to: 'arellano.08bits@gmail.com, jaime.08bits@gmail.com,' +
+        ' pedrocruz.08bits@gmail.com, marionegrete.08bits@gmail.com', // list of receivers
         subject: 'Nuevo contacto', // Subject line
         //text: text //, // plaintext body
          html: '<b>Ha recibido información de este contacto:</b><br>'
@@ -37,10 +38,10 @@ function handleSendMail(req, res) {
     transporter.sendMail(mailOptions, function(error, info){
         if(error){
             //console.log(error);
-            //res.json({yo: 'error'});
+            //res.json({data: 'error'});
         }else{
             //console.log('Message sent: ' + info.response);
-            //res.json({yo: info.response});
+            //res.json({data: info.response});
             res.end("done");
         };
     });
