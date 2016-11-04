@@ -16,7 +16,7 @@ function handleSendRequest(req, res) {
     var budget = req.body.budget;
     var message = req.body.message;
 
-    var transporter = nodemailer.createTransport('smtps://mail.08bits%40gmail.com:08bits_Team@smtp.gmail.com');
+    var transporter = nodemailer.createTransport(config.smtps);
 
     var mailOptions = {
         from: 'mail.08bits@gmail.com', // sender address
