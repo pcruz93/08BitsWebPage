@@ -173,17 +173,30 @@
             //                                                    NUMBER
             // ---------------------------------------------------------
             if ($this.attr("type") !== undefined && $this.attr("type").toLowerCase() === "number") {
-              message = settings.builtInValidators.number.message;
+                message = settings.builtInValidators.number.message;
               if ($this.data("validationNumberMessage")) {
                 message = $this.data("validationNumberMessage");
               }
               $this.data("validationNumberMessage", message);
             }
+              
+            // ---------------------------------------------------------
+            //                                                    TELEPHONE
+            // ---------------------------------------------------------
+            //if ($this.attr("type") !== undefined && $this.attr("type").toLowerCase() === "tel") {
+            //    message = "No es un número de teléfono válido<!-- data-validator-number-message to override -->"; 
+            //    //message = settings.builtInValidators.number.message;
+            //  if ($this.data("validationNumberMessage")) {
+            //    message = $this.data("validationNumberMessage");
+            //  }
+            //  $this.data("validationNumberMessage", message);
+            //}
+              
             // ---------------------------------------------------------
             //                                                     EMAIL
             // ---------------------------------------------------------
             if ($this.attr("type") !== undefined && $this.attr("type").toLowerCase() === "email") {
-              message = "No es un correo valido<!-- data-validator-validemail-message to override -->";
+              message = "No es un correo válido<!-- data-validator-validemail-message to override -->";
               if ($this.data("validationValidemailMessage")) {
                 message = $this.data("validationValidemailMessage");
               } else if ($this.data("validationEmailMessage")) {
