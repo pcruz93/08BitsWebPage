@@ -1,3 +1,4 @@
+var subdomain = require('express-subdomain');
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -7,8 +8,8 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var mail = require('./routes/mail');
-var stack = require('./routes/stack');
 var request = require('./routes/request');
+var stack = require('./routes/stack');
 
 var app = express();
 
@@ -28,6 +29,9 @@ app.use('/', index);
 app.use('/mail', mail);
 app.use('/stack', stack);
 app.use('/request', request);
+
+app.use(subdomain('stack', stack));
+
 app.use('*', index);
 
 // catch 404 and forward to error handler
