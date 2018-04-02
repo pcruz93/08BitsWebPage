@@ -3,6 +3,7 @@
  */
 var express = require('express');
 var nodemailer = require('nodemailer');
+var xoauth2 = require('xoauth2');
 var config = require("./../config");
 var router = express.Router();
 
@@ -16,7 +17,18 @@ function handleSendRequest(req, res) {
     var budget = req.body.budget;
     var message = req.body.message;
 
-    var transporter = nodemailer.createTransport(config.smtps);
+    //var transporter = nodemailer.createTransport(config.smtps);
+    var transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+            xoauth2: xoauth2.createXOAuth2Generator({
+                user: 'mail.08bits@gmail.com',
+                clientId: config.clientId,
+                clientSecret: config.clientSecret,
+                refreshToken: '1/B_Y4GSMCD8sKJf_7_UrLMlD2NYG_J9TksPT4L-nZmPO5q4JekuzXm9-NdtpsJeod'
+            })
+        }
+    });
 
     var mailOptions = {
         from: 'mail.08bits@gmail.com', // sender address
