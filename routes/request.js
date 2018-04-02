@@ -20,8 +20,7 @@ function handleSendRequest(req, res) {
 
     var mailOptions = {
         from: 'mail.08bits@gmail.com', // sender address
-        to: 'arellano.08bits@gmail.com, jaime.08bits@gmail.com,' +
-        ' pedrocruz.08bits@gmail.com, marionegrete.08bits@gmail.com', // list of receivers
+        to: '08bits.team@gmail.com', // list of receivers
         subject: 'Nueva solicitud de cotización', // Subject line
         html: '<b>Ha recibido una nueva solicitud de cotización con esta información:</b><br>'
         + '<b>Nombre: </b>'   + name +  '<br>'
