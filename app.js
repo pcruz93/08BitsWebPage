@@ -9,6 +9,7 @@ var index = require('./routes/index')
 var mail = require('./routes/mail')
 var stack = require('./routes/stack')
 var request = require('./routes/request')
+var blog = require('./routes/blog')
 
 var app = express()
 
@@ -28,6 +29,7 @@ app.use('/', index)
 app.use('/mail', mail)
 app.use('/stack', stack)
 app.use('/request', request)
+app.use('/blog', blog)
 app.use('*', index)
 
 // catch 404 and forward to error handler
